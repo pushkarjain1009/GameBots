@@ -82,7 +82,7 @@ def minimax(state, depth, player):
         best = [-1, -1, -infinity]
     else:
         best = [-1, -1, +infinity]
-    print(depth)
+
     if depth == 0 or game_over(state):
         score = evaluate(state)
         return [-1, -1, score]
